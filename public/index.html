@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      const interval = setInterval(() => {
+        fetch('/foo').then(({ ok }) => {
+          if (!ok) {
+            clearInterval(interval);
+            throw new Error('Fail!');
+          }
+        });
+      }, 1);
+    </script>
+  </head>
+  <body>Hello</body>
+</html>

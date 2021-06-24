@@ -1,0 +1,17 @@
+{
+  "name": "reproduce-intercept-bug",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "node app.js",
+    "test": "cypress run"
+  },
+  "author": "Kevin Kirchhoff <kevin.kirchhoff@appfolio.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "7.6.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
